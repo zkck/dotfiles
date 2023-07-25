@@ -1,0 +1,6 @@
+[submodule "config"]
+	path = config
+	url = https://github.com/zkck/config.git
+[submodule "bin"]
+	path = bin
+	url = https://github.com/zkck/scripts.git
