@@ -1,0 +1,9 @@
+gui:
+  nerdFontsVersion: '3'
+  scrollPastBottom: false
+  showCommandLog: false
+
+git:
+  paging:
+    colorArg: always
+    pager: "delta -n --hunk-header-style omit --paging never"
