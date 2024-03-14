@@ -1,5 +1,6 @@
 call plug#begin()
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'nvim-treesitter/nvim-treesitter-context'
 
 " LSP and autocomplete plugins
 Plug 'neovim/nvim-lspconfig'
