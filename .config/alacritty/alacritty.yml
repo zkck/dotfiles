@@ -9,7 +9,6 @@
 # All imports must either be absolute paths starting with `/`, or paths relative
 # to the user's home directory starting with `~/`.
 import:
-#  - /path/to/alacritty.yml
   - ~/.config/alacritty/themes/melange_dark.yml
 
 # Any items in the `env` entry below will be added as
@@ -86,7 +85,7 @@ window:
   #title: Alacritty
 
   # Allow terminal applications to change Alacritty's window title.
-  #dynamic_title: true
+  dynamic_title: true
 
   # Window class (Linux/BSD only):
   #class:
@@ -441,10 +440,6 @@ font:
 #   - (Windows) powershell
 shell:
   program: /usr/local/bin/tmux
-  args:
-    - new-session
-    - -As
-    - main
 
 # Startup directory
 #
