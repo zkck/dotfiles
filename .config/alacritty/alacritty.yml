@@ -440,7 +440,7 @@ font:
 #   - (Linux/BSD/macOS) `$SHELL` or the user's login shell, if `$SHELL` is unset
 #   - (Windows) powershell
 shell:
-  program: /usr/bin/tmux
+  program: /usr/local/bin/tmux
   args:
     - new-session
     - -As
