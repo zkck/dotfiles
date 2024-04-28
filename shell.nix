@@ -10,6 +10,8 @@ pkgs.mkShellNoCC {
     fish
     zoxide
     dprint
+    tree-sitter
+    lua-language-server
   ];
 
   shellHook = "tmux";
