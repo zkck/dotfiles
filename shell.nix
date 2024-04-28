@@ -10,10 +10,18 @@ pkgs.mkShellNoCC {
     fish
     zoxide
     dprint
+    neovim
     tree-sitter
     lua-language-server
+    kubectl
+    k9s
+
+    go
+    gopls
   ];
 
   shellHook = "tmux";
+
+  EDITOR = "nvim";
 }
 
