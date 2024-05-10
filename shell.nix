@@ -5,23 +5,43 @@ in
 
 pkgs.mkShell {
   packages = with pkgs; [
+
+    # core stack
     tmux
-    lazygit
     git
     fish
-    zoxide
-    dprint
     neovim
-    tree-sitter
+
+    # for editing neovim config
     lua-language-server
+
+    # k8s
     kubectl
     k9s
 
+    # shell utilities
+    zoxide
+    lazygit
+    fzf
+    fd
+    less
+    ripgrep
+
+    # editing
+    dprint
+    tree-sitter
+
+    # golang
     go
     gopls
 
+    # rust
     cargo
     rust-analyzer
+
+    # python
+    python3
+    pyright
   ];
 
   shellHook = "tmux";
