@@ -28,7 +28,10 @@ pkgs.mkShell {
 
   EDITOR = "nvim";
 
-  # https://nixos.wiki/wiki/Development_environment_with_nix-shell#Troubleshooting
+  # fix for cargo https://nixos.wiki/wiki/Development_environment_with_nix-shell#Troubleshooting
   NIX_ENFORCE_PURITY = "0";
+
+  # fix for git https://github.com/NixOS/nixpkgs/issues/58132
+  GIT_SSH = "/usr/bin/ssh";
 }
 
