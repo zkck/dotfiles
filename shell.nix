@@ -3,10 +3,11 @@ let
   pkgs = import nixpkgs { config = {}; overlays = []; };
 in
 
-pkgs.mkShellNoCC {
+pkgs.mkShell {
   packages = with pkgs; [
     tmux
     lazygit
+    git
     fish
     zoxide
     dprint
@@ -18,10 +19,16 @@ pkgs.mkShellNoCC {
 
     go
     gopls
+
+    cargo
+    rust-analyzer
   ];
 
   shellHook = "tmux";
 
   EDITOR = "nvim";
+
+  # https://nixos.wiki/wiki/Development_environment_with_nix-shell#Troubleshooting
+  NIX_ENFORCE_PURITY = "0";
 }
 
