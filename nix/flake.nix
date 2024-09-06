@@ -43,6 +43,7 @@
 
         # rust
         cargo
+        rustfmt
         rust-analyzer
 
         # python
