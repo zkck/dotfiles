@@ -42,7 +42,6 @@
         gopls
 
         # rust
-        rustup
         cargo
         rust-analyzer
 
