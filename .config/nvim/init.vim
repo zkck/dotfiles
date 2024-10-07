@@ -25,6 +25,8 @@ Plug 'lewis6991/gitsigns.nvim'
 
 Plug 'nvim-tree/nvim-tree.lua'
 Plug 'nvim-tree/nvim-web-devicons'
+
+Plug 'mhartington/formatter.nvim'
 call plug#end()
 
 let mapleader = " "
@@ -38,6 +40,11 @@ set relativenumber
 
 set termguicolors
 colorscheme melange
+
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost * FormatWrite
+augroup END
 
 " Remaining configurations is Lua
 lua require('zkck')
