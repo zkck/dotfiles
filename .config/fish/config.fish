@@ -6,4 +6,6 @@ abbr -a -- nv nvim
 abbr -a -- c cargo
 abbr -a -- k kubectl
 
+set fish_greeting
+
 zoxide init fish | source
