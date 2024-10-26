@@ -41,6 +41,8 @@ set relativenumber
 set termguicolors
 colorscheme melange
 
+hi Normal guibg=NONE
+
 augroup FormatAutogroup
   autocmd!
   autocmd BufWritePost * FormatWrite

@@ -4,9 +4,6 @@ import = ["~/.config/alacritty/themes/melange_dark.toml"]
 family = "BlexMono Nerd Font"
 
 [window]
-decorations = "none"
-dynamic_title = true
-
-[window.padding]
-x = 5
-y = 5
+decorations = "None"
+padding = { x = 8, y = 8 }
+opacity = 0.95
