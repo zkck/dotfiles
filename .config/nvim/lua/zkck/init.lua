@@ -27,6 +27,14 @@ lspconfig.rust_analyzer.setup {
 lspconfig.gopls.setup {
     capabilities = capabilities,
 }
+lspconfig.ruff.setup {
+  init_options = {
+    settings = {
+      -- Ruff language server settings go here
+    }
+  }
+}
+
 lspconfig.lua_ls.setup {
     on_init = function(client)
         local path = client.workspace_folders[1].name
