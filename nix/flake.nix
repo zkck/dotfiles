@@ -16,7 +16,6 @@
       {
         devShells.default = pkgs.mkShell {
           packages = with pkgs; [
-
             # core stack
             tmux
             git
@@ -38,6 +37,7 @@
             fd
             ripgrep
             less
+            just
 
             # editing
             dprint
@@ -55,6 +55,7 @@
             # python
             python3
             pyright
+            ruff
           ];
 
           shellHook = "tmux";
